@@ -1,0 +1,147 @@
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+nav {
+  background: #34495e;
+  position: fixed;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    left: 0;
+    top: 0;
+    width: 25rem;
+    height: 100%;
+    -webkit-transition: margin 0.3s ease-out;
+    transition: margin 0.3s ease-out;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  nav {
+    width: 16rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .toggle-navbar {
+    margin-left: -25rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .toggle-navbar {
+    margin-left: -16rem;
+  }
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+
+.list__item {
+  list-style: none;
+  display: block;
+}
+
+.list__link {
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  display: block;
+  color: #bdc3c7;
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 400px) {
+  .list__link {
+    text-align: center;
+  }
+}
+
+.list__link:hover {
+  color: white;
+  background: #2c3e50;
+}
+
+.fill {
+  height: 250rem;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(60%, #ecf0f1), color-stop(40%, #3498db));
+  background: linear-gradient(to right bottom, #ecf0f1 60%, #3498db 40%);
+}
+
+.button {
+  font-size: 3.8rem;
+  border: 1px solid #aaaaaa;
+  border-radius: 3px;
+  color: #444;
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: 1rem;
+  right: -8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .button {
+    display: none;
+  }
+}
+
+.button:hover {
+  background: rgba(170, 170, 170, 0.6);
+  color: #eee;
+}
+/*# sourceMappingURL=style.css.map */

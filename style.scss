@@ -1,0 +1,109 @@
+html {
+   font-size: 62.5%;
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   height: 100vh;
+   width: 100%;
+   overflow-x: hidden;
+}
+
+nav {
+   background: #34495e;
+   position: fixed;
+
+   width: 100%;
+
+   @media only screen and (max-width: 768px) {
+      left: 0;
+      top: 0;
+      width: 25rem;
+      height: 100%;
+      transition: margin 0.3s ease-out;
+   }
+
+   @media only screen and (max-width: 400px) {
+      width: 16rem;
+   }
+}
+
+.toggle-navbar {
+   @media only screen and (max-width: 768px) {
+      margin-left: -25rem;
+   }
+
+   @media only screen and (max-width: 400px) {
+      margin-left: -16rem;
+   }
+}
+
+.list {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: stretch;
+   }
+
+   &__item {
+      list-style: none;
+      display: block;
+   }
+   &__link {
+      text-decoration: none;
+      padding: 1rem 1.5rem;
+      display: block;
+
+      color: #bdc3c7;
+      font-size: 1.6rem;
+      @media only screen and (max-width: 400px) {
+         text-align: center;
+      }
+      &:hover {
+         color: white;
+         background: #2c3e50;
+      }
+   }
+}
+
+.fill {
+   height: 250rem;
+   background: linear-gradient(to right bottom, #ecf0f1 60%, #3498db 40%);
+}
+
+.button {
+   font-size: 3.8rem;
+   border: 1px solid rgb(170, 170, 170);
+   border-radius: 3px;
+   color: #444;
+   width: 6rem;
+   height: 6rem;
+   position: absolute;
+   top: 1rem;
+   right: -8rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all 0.3s;
+   vertical-align: top;
+   cursor: pointer;
+   @media only screen and (min-width: 768px) {
+      display: none;
+   }
+
+   &:hover {
+      background: rgba(#aaa, 0.6);
+      color: #eee;
+   }
+}
