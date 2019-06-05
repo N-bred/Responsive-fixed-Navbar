@@ -21,29 +21,30 @@ body {
 nav {
    background: #34495e;
    position: fixed;
-
    width: 100%;
 
    @media only screen and (max-width: 768px) {
       left: 0;
       top: 0;
       width: 25rem;
+      margin-left: -25rem;
       height: 100%;
       transition: margin 0.3s ease-out;
    }
 
    @media only screen and (max-width: 400px) {
       width: 16rem;
+      margin-left: -16rem;
    }
 }
 
 .toggle-navbar {
    @media only screen and (max-width: 768px) {
-      margin-left: -25rem;
+      margin-left: 0;
    }
 
    @media only screen and (max-width: 400px) {
-      margin-left: -16rem;
+      margin-left: 0;
    }
 }
 
@@ -51,9 +52,11 @@ nav {
    display: flex;
    align-items: center;
    justify-content: center;
+
    @media only screen and (max-width: 768px) {
       flex-direction: column;
       align-items: stretch;
+      margin-top: 1rem;
    }
 
    &__item {
@@ -90,7 +93,7 @@ nav {
    width: 6rem;
    height: 6rem;
    position: absolute;
-   top: 1rem;
+   top: 1%;
    right: -8rem;
    display: flex;
    justify-content: center;

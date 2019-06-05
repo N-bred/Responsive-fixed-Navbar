@@ -31,6 +31,7 @@ nav {
     left: 0;
     top: 0;
     width: 25rem;
+    margin-left: -25rem;
     height: 100%;
     -webkit-transition: margin 0.3s ease-out;
     transition: margin 0.3s ease-out;
@@ -40,18 +41,19 @@ nav {
 @media only screen and (max-width: 400px) {
   nav {
     width: 16rem;
+    margin-left: -16rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .toggle-navbar {
-    margin-left: -25rem;
+    margin-left: 0;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .toggle-navbar {
-    margin-left: -16rem;
+    margin-left: 0;
   }
 }
 
@@ -76,6 +78,7 @@ nav {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+    margin-top: 1rem;
   }
 }
 
@@ -117,7 +120,7 @@ nav {
   width: 6rem;
   height: 6rem;
   position: absolute;
-  top: 1rem;
+  top: 1%;
   right: -8rem;
   display: -webkit-box;
   display: -ms-flexbox;
